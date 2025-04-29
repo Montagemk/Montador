@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montador de Móveis em Taubaté | Serviço Rápido e Confiável</title>
+    
+    <!-- Meta tags para SEO -->
+    <meta name="description" content="Serviço profissional de montagem e desmontagem de móveis em Taubaté. Atendimento rápido, orçamento sem compromisso. Montador de móveis qualificado.">
+    <meta name="keywords" content="montador de móveis, montagem de móveis, Taubaté, desmontagem de móveis, instalação de móveis, reparos de móveis, Vale do Paraíba">
+    <meta name="author" content="Montador de Móveis em Taubaté">
+    
+    <!-- Open Graph para compartilhamento em redes sociais -->
+    <meta property="og:title" content="Montador de Móveis em Taubaté - Serviço Profissional">
+    <meta property="og:description" content="Montagem, desmontagem e reparos de móveis em Taubaté. Entre em contato e faça seu orçamento!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.montadordemoveistaubate.com.br">
+    <meta property="og:image" content="images/logo.png">
+    
+    <!-- Favicon (substitua pelo caminho do seu logo real) -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* Variáveis CSS */
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #4caf50;
+            --accent-color: #ff9800;
+            --text-color: #333;
+            --light-color: #f9f9f9;
+            --dark-color: #222;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --border-radius: 8px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-color);
+        }
+        
+        /* Header */
+        header {
+            background-color: #fff;
+            box-shadow: var(--shadow);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        .logo h1 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .contact-info {
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-phone {
+            margin-right: 20px;
+            font-weight: 500;
+        }
+        
+        .contact-phone i {
+            color: var(--primary-color);
+            margin-right: 5px;
+        }
+        
+        .whatsapp-button {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 15px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-button:hover {
+            background-color: #3d8b40;
+            transform: translateY(-2px);
+        }
+        
+        .whatsapp-button i {
+            margin-right: 5px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding-top: 120px;
+            padding-bottom: 60px;
+            background: linear-gradient(to right, #0056b3, #0077cc);
+            color: white;
+        }
+        
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin-bottom: 30px;
+        }
+        
+        .cta-button {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 15px 30px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            display: inline-flex;
+            align-items: center;
+        }
+        
+        .cta-button:hover {
+            background-color: #e68a00;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .cta-button i {
+            margin-right: 10px;
+            font-size: 1.3rem;
+        }
+        
+        /* Serviços */
+        .services {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2rem;
+            color: var(--primary-color);
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .service-title {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+        
+        .service-description {
+            color: #666;
+        }
+        
+        /* Por que nos escolher */
+        .why-us {
+            padding: 80px 0;
+            background-color: #f0f5ff;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .feature-icon {
+            font-size: 2rem;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            background-color: white;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow);
+        }
+        
+        .feature-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--dark-color);
+        }
+        
+        .feature-description {
+            color: #666;
+        }
+        
+        /* Call to action */
+        .cta-section {
+            padding: 80px 0;
+            background: linear-gradient(to right, #ff9800, #ff6f00);
+            color: white;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .cta-section .cta-button {
+            background-color: white;
+            color: var(--accent-color);
+        }
+        
+        .cta-section .cta-button:hover {
+            background-color: var(--light-color);
+            color: var(--accent-color);
+        }
+        
+        /* Contato */
+        .contact {
+            padding: 80px 0;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .contact-info-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .contact-icon {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-right: 15px;
+            min-width: 25px;
+        }
+        
+        .contact-text h3 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            color: var(--dark-color);
+        }
+        
+        .contact-text p {
+            color: #666;
+        }
+        
+        .contact-text a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-text a:hover {
+            color: var(--accent-color);
+        }
+        
+        .map-container {
+            height: 300px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 40px 0 20px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        
+        .footer-logo {
+            margin-bottom: 15px;
+        }
+        
+        .footer-logo img {
+            height: 40px;
+        }
+        
+        .footer-info {
+            flex: 1;
+            min-width: 300px;
+            margin-right: 40px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-info p {
+            margin-bottom: 15px;
+            color: #ccc;
+        }
+        
+        .social-icons {
+            display: flex;
+        }
+        
+        .social-icons a {
+            color: white;
+            margin-right: 15px;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            color: var(--accent-color);
+        }
+        
+        .footer-nav {
+            flex: 1;
+            min-width: 200px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-nav h3 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .footer-nav ul {
+            list-style: none;
+        }
+        
+        .footer-nav li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-nav a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-nav a:hover {
+            color: var(--accent-color);
+        }
+        
+        .footer-services {
+            flex: 1;
+            min-width: 200px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        /* Pagamentos */
+        .payment-methods {
+            margin-top: 20px;
+        }
+        
+        .payment-methods h4 {
+            margin-bottom: 10px;
+            color: white;
+        }
+        
+        .payment-icons {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .payment-icons i {
+            font-size: 1.5rem;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            color: #ccc;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 992px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+            
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo {
+                margin-bottom: 15px;
+                justify-content: center;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+            }
+            
+            .contact-phone {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding-top: 150px;
+            }
+            
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .cta-button {
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 1.7rem;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+            }
+            
+            .footer-info, .footer-nav, .footer-services {
+                margin-right: 0;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero h2 {
+                font-size: 1.5rem;
+            }
+            
+            .service-card, .feature-card, .contact-info-card {
+                padding: 20px;
+            }
+        }
+
+        /* Animações */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate {
+            animation: fadeIn 0.8s ease forwards;
+        }
+        
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+        .delay-4 { animation-delay: 0.8s; }
+        
+        /* Float animation for CTA button */
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+            100% { transform: translateY(0); }
+        }
+        
+        .float {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <!-- Substitua pelo seu logo real -->
+                <img src="images/logo.png" alt="Logo Montador de Móveis em Taubaté">
+                <h1>Montador de Móveis em Taubaté</h1>
+            </div>
+            
+            <div class="contact-info">
+                <div class="contact-phone">
+                    <i class="fas fa-phone"></i> (12) 98852-2317
+                </div>
+                <a href="https://wa.me/5512988522317" class="whatsapp-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h2 class="animate">Montagem de Móveis Profissional em Taubaté</h2>
+            <p class="animate delay-1">Serviço rápido, prático e de qualidade para montagem, desmontagem e reparos em móveis.</p>
+            <a href="https://wa.me/5512988522317?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20montagem%20de%20móveis" class="cta-button float animate delay-2" target="_blank">
+                <i class="fab fa-whatsapp"></i> Solicite um Orçamento
+            </a>
+        </div>
+    </section>
+    
+    <!-- Problemas que resolvemos -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Resolvemos seu problema</h2>
+            
+            <div class="services-grid">
+                <div class="service-card animate">
+                    <div class="service-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3 class="service-title">Comprou Móveis pela internet?</h3>
+                    <p class="service-description">Muitos móveis chegam desmontados e sem manual. Nós fazemos a montagem profissional para você.</p>
+                </div>
+                
+                <div class="service-card animate delay-1">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 class="service-title">Vai se mudar?</h3>
+                    <p class="service-description">Oferecemos serviços de desmontagem, embalagem e posterior montagem na nova residência.</p>
+                </div>
+                
+                <div class="service-card animate delay-2">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="service-title">Reformando a casa?</h3>
+                    <p class="service-description">Ajudamos na desmontagem e montagem de móveis durante reformas, bem como em adaptações necessárias.</p>
+                </div>
+                
+                <div class="service-card animate delay-3">
+                    <div class="service-icon">
+                        <i class="fas fa-hourglass-half"></i>
+                    </div>
+                    <h3 class="service-title">Esperando demais a Montagem?</h3>
+                    <p class="service-description">Agendamento rápido e serviço eficiente para que você não precise mais esperar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Nossos Serviços -->
+    <section class="why-us">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card animate">
+                    <div class="feature-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3 class="feature-title">Montagens</h3>
+                    <p class="feature-description">Montamos qualquer tipo de móvel com precisão e cuidado, garantindo durabilidade.</p>
+                </div>
+                
+                <div class="feature-card animate delay-1">
+                    <div class="feature-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3 class="feature-title">Desmontagem</h3>
+                    <p class="feature-description">Desmontamos seus móveis com cuidado para que possam ser remontados depois sem danos.</p>
+                </div>
+                
+                <div class="feature-card animate delay-2">
+                    <div class="feature-icon">
+                        <i class="fas fa-screwdriver"></i>
+                    </div>
+                    <h3 class="feature-title">Instalação</h3>
+                    <p class="feature-description">Instalamos prateleiras, quadros, TVs e outros itens com segurança em sua parede.</p>
+                </div>
+                
+                <div class="feature-card animate delay-3">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="feature-title">Reparos e Adaptação</h3>
+                    <p class="feature-description">Consertamos e adaptamos seus móveis para melhor utilização e durabilidade.</p>
+                </div>
+                
+                <div class="feature-card animate delay-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <h3 class="feature-title">Embalagem para Transporte</h3>
+                    <p class="feature-description">Embalamos seus móveis com proteção adequada para transporte seguro.</p>
+                </div>
+                
+                <div class="feature-card animate delay-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3 class="feature-title">Formas de Pagamento</h3>
+                    <p class="feature-description">Aceitamos cartões de crédito e débito para sua comodidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="animate">Precisando de um montador de móveis confiável?</h2>
+            <p class="animate delay-1">Entre em contato conosco pelo WhatsApp ou Facebook e faça agora mesmo seu orçamento sem compromisso!</p>
+            <a href="https://wa.me/5512988522317?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento" class="cta-button float animate delay-2" target="_blank">
+                <i class="fab fa-whatsapp"></i> Fale Conosco no WhatsApp
+            </a>
+        </div>
+    </section>
+    
+    <!-- Contato -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info-card animate">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Endereço</h3>
+                            <p>Rua Capitão Cirilo Lobato, 199 - Centro, Taubaté - SP</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Telefone</h3>
+                            <p><a href="tel:+5512988522317">(12) 98852-2317</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>WhatsApp</h3>
+                            <p><a href="https://wa.me/5512988522317" target="_blank">(12) 98852-2317</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Facebook</h3>
+                            <p><a href="https://www.facebook.com/montadordemoveistaubate" target="_blank">Montador de móveis Taubaté</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map-container animate delay-2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.3830059646123!2d-45.56292708503443!3d-23.020727984951767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4a9c7f227c4d%3A0x4a2647a7e89d9a7c!2sR.%20Cap.%20Cirilo%20Lobato%2C%20199%20-%20Centro%2C%20Taubat%C3%A9%20-%20SP%2C%2012020-110!5e0!3m2!1spt-BR!2sbr!4v1651172574453!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <!-- Substitua pelo seu logo real -->
+                        <img src="images/logo-white.png" alt="Logo Montador de Móveis em Taubaté">
+                    </div>
+                    <p>Serviço profissional de montagem, desmontagem e reparos de móveis em Taubaté e região.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/montadordemoveistaubate" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/montadordemoveistaubate" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/5512988522317" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    
+                    <div class="payment-methods">
+                        
