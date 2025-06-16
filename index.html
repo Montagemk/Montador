@@ -7,422 +7,55 @@
     <meta name="description" content="Montagem, desmontagem, reparos e instalação de móveis em Curitiba. Profissionais qualificados, serviço rápido e eficiente. Orçamento grátis via WhatsApp!">
     <meta name="keywords" content="montador de móveis Curitiba, montagem de móveis em Curitiba, montagem de guarda-roupa Curitiba, desmontagem móveis, reparo móveis">
     
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            overflow-x: hidden;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #2c5aa0 0%, #3b82f6 100%);
-            color: white;
-            padding: 100px 0;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('http://googleusercontent.com/generated_image_content/0') center/cover;
-            opacity: 0.1;
-            z-index: 1;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-        }
-
-        .hero-text h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-
-        .hero-text p {
-            font-size: 1.3rem;
-            margin-bottom: 30px;
-            opacity: 0.9;
-        }
-
-        .hero-image {
-            text-align: center;
-        }
-
-        .hero-image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 15px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-        }
-
-        .cta-button {
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-            background: linear-gradient(45deg, #ff6b35, #f7931e);
-            color: white;
-            text-decoration: none;
-            padding: 18px 35px;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 35px rgba(255, 107, 53, 0.4);
-        }
-
-        .cta-button i {
-            font-size: 1.3rem;
-        }
-
-        /* Services Section */
-        .services {
-            padding: 100px 0;
-            background: #f8fafc;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2.8rem;
-            font-weight: 700;
-            color: #2c5aa0;
-            margin-bottom: 60px;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
-
-        .service-card {
-            background: white;
-            padding: 40px 30px;
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
-            border-color: #ff6b35;
-        }
-
-        .service-icon {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(45deg, #2c5aa0, #3b82f6);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 25px;
-            color: white;
-            font-size: 2rem;
-        }
-
-        .service-card h3 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #2c5aa0;
-            margin-bottom: 15px;
-        }
-
-        .service-card p {
-            color: #666;
-            line-height: 1.6;
-        }
-
-        /* Why Choose Section */
-        .why-choose {
-            padding: 100px 0;
-            background: white;
-        }
-
-        .why-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-        }
-
-        .why-text h2 {
-            font-size: 2.8rem;
-            font-weight: 700;
-            color: #2c5aa0;
-            margin-bottom: 40px;
-        }
-
-        .benefits-list {
-            list-style: none;
-        }
-
-        .benefits-list li {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 20px;
-            font-size: 1.1rem;
-        }
-
-        .benefits-list i {
-            color: #ff6b35;
-            font-size: 1.2rem;
-            width: 20px;
-        }
-
-        .why-image {
-            position: relative;
-        }
-
-        .why-image::before {
-            content: '';
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            right: -20px;
-            bottom: -20px;
-            background: linear-gradient(45deg, #2c5aa0, #3b82f6);
-            border-radius: 20px;
-            z-index: -1;
-        }
-
-        .why-image img {
-            width: 100%;
-            border-radius: 20px;
-            position: relative;
-            z-index: 1;
-        }
-
-        /* Contact Section */
-        .contact {
-            padding: 100px 0;
-            background: linear-gradient(135deg, #2c5aa0 0%, #3b82f6 100%);
-            color: white;
-            text-align: center;
-        }
-
-        .contact h2 {
-            font-size: 2.8rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-
-        .contact p {
-            font-size: 1.2rem;
-            margin-bottom: 50px;
-            opacity: 0.9;
-        }
-
-        .contact-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-bottom: 50px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            font-size: 1.1rem;
-        }
-
-        .contact-item i {
-            font-size: 1.5rem;
-            color: #ff6b35;
-        }
-
-        .contact-item a {
-            color: white;
-            text-decoration: none;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        .social-links a {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            color: white;
-            text-decoration: none;
-            background: rgba(255,255,255,0.1);
-            padding: 12px 20px;
-            border-radius: 30px;
-            transition: all 0.3s ease;
-        }
-
-        .social-links a:hover {
-            background: rgba(255,255,255,0.2);
-            transform: translateY(-2px);
-        }
-
-        /* Floating WhatsApp Button */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 60px;
-            height: 60px;
-            background: #25d366;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
-            z-index: 1000;
-            transition: all 0.3s ease;
-            animation: pulse 2s infinite;
-        }
-
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4);
-        }
-
-        .whatsapp-float i {
-            color: white;
-            font-size: 1.8rem;
-        }
-
-        @keyframes pulse {
-            0% { box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3); }
-            50% { box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3), 0 0 0 10px rgba(37, 211, 102, 0.1); }
-            100% { box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3); }
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero-content {
-                grid-template-columns: 1fr;
-                text-align: center;
-                gap: 30px;
-            }
-
-            .hero-text h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero-text p {
-                font-size: 1.1rem;
-            }
-
-            .why-content {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-
-            .section-title {
-                font-size: 2.2rem;
-            }
-
-            .contact h2 {
-                font-size: 2.2rem;
-            }
-
-            .contact-info {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-
-            .social-links {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .whatsapp-float {
-                bottom: 20px;
-                right: 20px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero {
-                padding: 60px 0;
-            }
-
-            .services, .why-choose, .contact {
-                padding: 60px 0;
-            }
-
-            .cta-button {
-                padding: 15px 25px;
-                font-size: 1rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Hero Section -->
-    <section class="hero">
+    <header class="main-header">
+        <div class="container">
+            <a href="#" class="logo">CRAFT MONTADOR</a>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#why-choose">Por Que Nós?</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-text">
+                <div class="hero-text animate-fade-in">
                     <h1>Montagem de Móveis em Curitiba? Conte com a Craft!</h1>
                     <p>Montamos, desmontamos, reparamos e instalamos seus móveis com profissionalismo e rapidez.</p>
-                    <a href="https://api.whatsapp.com/send?phone=5541992181555&text=Olá! Gostaria de solicitar um orçamento para montagem de móveis." class="cta-button">
+                    <a href="https://api.whatsapp.com/send?phone=5541992181555&text=Olá! Gostaria de solicitar um orçamento para montagem de móveis." class="cta-button" target="_blank">
                         <i class="fab fa-whatsapp"></i>
                         Peça seu Orçamento Grátis via WhatsApp!
                     </a>
                 </div>
-                <div class="hero-image">
-                    <img src="http://googleusercontent.com/generated_image_content/0" alt="Montagem profissional de móveis em Curitiba">
+                <div class="hero-image animate-slide-up">
+                    <img src="https://via.placeholder.com/600x400?text=Montador+de+Moveis" alt="Montagem profissional de móveis em Curitiba">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
-            <h2 class="section-title">Nossos Serviços</h2>
+            <h2 class="section-title animate-fade-in">Nossos Serviços</h2>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card animate-slide-up">
                     <div class="service-icon">
                         <i class="fas fa-tools"></i>
                     </div>
@@ -430,7 +63,7 @@
                     <p>Montamos todos os tipos de móveis com precisão e cuidado. Guarda-roupas, estantes, camas, mesas e muito mais.</p>
                 </div>
                 
-                <div class="service-card">
+                <div class="service-card animate-slide-up">
                     <div class="service-icon">
                         <i class="fas fa-exchange-alt"></i>
                     </div>
@@ -438,7 +71,7 @@
                     <p>Serviço completo de desmontagem para mudanças e remontagem no novo local, mantendo a integridade dos móveis.</p>
                 </div>
                 
-                <div class="service-card">
+                <div class="service-card animate-slide-up">
                     <div class="service-icon">
                         <i class="fas fa-wrench"></i>
                     </div>
@@ -446,7 +79,7 @@
                     <p>Consertamos gavetas, dobradiças, puxadores e realizamos ajustes para que seus móveis funcionem perfeitamente.</p>
                 </div>
                 
-                <div class="service-card">
+                <div class="service-card animate-slide-up">
                     <div class="service-icon">
                         <i class="fas fa-hammer"></i>
                     </div>
@@ -457,56 +90,65 @@
         </div>
     </section>
 
-    <!-- Why Choose Section -->
-    <section class="why-choose">
+    <section class="why-choose" id="why-choose">
         <div class="container">
             <div class="why-content">
-                <div class="why-text">
+                <div class="why-text animate-fade-in">
                     <h2>Por Que Escolher a Craft Montagens de Móveis?</h2>
                     <ul class="benefits-list">
-                        <li>
+                        <li class="animate-slide-right">
                             <i class="fas fa-check-circle"></i>
                             <span>Profissionais experientes e qualificados</span>
                         </li>
-                        <li>
+                        <li class="animate-slide-right">
                             <i class="fas fa-check-circle"></i>
                             <span>Serviço rápido e eficiente</span>
                         </li>
-                        <li>
+                        <li class="animate-slide-right">
                             <i class="fas fa-check-circle"></i>
                             <span>Máximo cuidado com seus móveis</span>
                         </li>
-                        <li>
+                        <li class="animate-slide-right">
                             <i class="fas fa-check-circle"></i>
                             <span>Atendimento completo e personalizado</span>
                         </li>
-                        <li>
+                        <li class="animate-slide-right">
                             <i class="fas fa-check-circle"></i>
                             <span>Aceitamos cartões de crédito e débito</span>
                         </li>
-                        <li>
+                        <li class="animate-slide-right">
                             <i class="fas fa-check-circle"></i>
                             <span>Garantia em todos os serviços</span>
                         </li>
                     </ul>
                 </div>
-                <div class="why-image">
-                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Profissional montando móveis">
+                <div class="why-image animate-slide-left">
+                    <img src="https://via.placeholder.com/600x400?text=Profissional+Montando" alt="Profissional montando móveis">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact">
-        <div class="container">
+    <section class="call-to-action">
+        <div class="container animate-fade-in">
+            <h2>Pronto para Transformar Seu Ambiente?</h2>
+            <p>Não perca tempo! Solicite um orçamento sem compromisso e deixe seus móveis em mãos de quem entende do assunto.</p>
+            <a href="https://api.whatsapp.com/send?phone=5541992181555&text=Olá! Gostaria de solicitar um orçamento para montagem de móveis." class="cta-button secondary-cta" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                Fale Conosco Agora!
+            </a>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container animate-fade-in">
             <h2>Fale Conosco</h2>
             <p>Entre em contato agora mesmo e solicite seu orçamento gratuito!</p>
             
             <div class="contact-info">
                 <div class="contact-item">
                     <i class="fab fa-whatsapp"></i>
-                    <a href="https://api.whatsapp.com/send?phone=5541992181555">(41) 99218-1555</a>
+                    <a href="https://api.whatsapp.com/send?phone=5541992181555" target="_blank">(41) 99218-1555</a>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-map-marker-alt"></i>
@@ -514,14 +156,9 @@
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-globe"></i>
-                    <a href="https://montadordemoveis.store">montadordemoveis.store</a>
+                    <a href="https://montadordemoveis.store" target="_blank">montadordemoveis.store</a>
                 </div>
             </div>
-
-            <a href="https://api.whatsapp.com/send?phone=5541992181555&text=Olá! Gostaria de solicitar um orçamento para montagem de móveis." class="cta-button">
-                <i class="fab fa-whatsapp"></i>
-                Solicite seu Orçamento Agora!
-            </a>
 
             <div class="social-links">
                 <a href="https://facebook.com/craftmontagens" target="_blank">
@@ -536,44 +173,17 @@
         </div>
     </section>
 
-    <!-- Floating WhatsApp Button -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Craft Montagens de Móveis. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
     <a href="https://api.whatsapp.com/send?phone=5541992181555&text=Olá! Gostaria de solicitar um orçamento para montagem de móveis." class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <script>
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Add animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe all service cards and benefit items
-        document.querySelectorAll('.service-card, .benefits-list li').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'all 0.6s ease';
-            observer.observe(el);
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
+
