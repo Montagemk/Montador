@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://montadordemoveis.store/sitemap.xml
